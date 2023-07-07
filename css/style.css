@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*DISEÑO PARA LA PÁGINA INICIO (APERTURA)*/
+
+body{
+    height: 150vh;
+    background-color: #ebaa4161;
+}
+
+header{
+    height: 51vh;
+    background-image: url(../assets/images/icono.jpg);
+    background-size: contain;
+    background-position-y: 11em;
+}
+
+main{
+    height: 94vh;
+}
+
+nav{
+    font-family: 'Inconsolata', monospace;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    
+}
+
+#tituloDelInicio{
+    position: relative;
+    left: 1.5em;
+    top: 4em;
+    height: 1.5em;
+}
+
+.nav-link{
+    color: black;
+}
+
+p{
+    color: black;
+}
+
+video{
+    width: 46em;
+    margin-top: 8em;
+}
+
+footer p a{
+    text-decoration: none;
+    color: rgba(13, 13, 12, 0.711);
+}
+
+
+/*DISEÑO PARA LA PÁGINA INICIO (CIERRE)*/
+
+/*DISEÑO PARA LA PÁGINA DOCUMENTO (APERTURA)*/
+
+#bodyDeProductos{
+    height: 250vh;
+}
+
+#mainDeProductos{
+    height: 194vh;
+}
+
+#tituloDeProductos{
+    width: 9em;
+    height: 2em;
+    margin-top: 2em;
+}
+
+#mainDeProductos div img{
+   width: 28em;
+   height: 19em;
+   background-color: aliceblue;
+   margin-top: 13px;
+   margin-left: 9em;
+   padding: 0; 
+   border: 7px double #9b703e;
+   border-radius: 20px;
+}
+
+#footerDeProductos p{
+    margin-bottom: 0;
+    margin-top: 7px;
+}
+
+@media (max-width: 320px){
+    header{
+        background-position: 10em;
+    }
+
+    nav div div ul{
+        background-color: #eeb25296;
+        margin-top: 5px;
+    }
+    
+    #tituloDelInicio{
+        position: absolute;
+        left: 2.7em;
+    }
+
+    video{
+        width: 18.5em;
+        margin-top: 4em;
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+    #tituloDeProductos{
+        position: relative;
+        bottom: 1em;
+        padding: 0;
+    }
+
+    #mainDeProductos div img{
+        width: 18.5em;
+        height: 11em;
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    #mainDeProductos div p{
+        padding-left: 22px;
+        margin-top: 1em;
+    }
+
+    #footerDeProductos{
+        position: relative;
+        top: 21em;
+    }
+
+    #footerDeProductos p{
+        margin-top: 14px;
+    } 
+}
