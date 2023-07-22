@@ -1,0 +1,28 @@
+/*ESTILO GENERAL*/
+$color-body: #ebaa4161;
+$color-h1: brown;
+$fondo-cabecera: url(../assets/images/icono.jpg);
+$bg-size: contain;
+$bg-posicion-y: 10em; 
+$fuente-titulo: 'Pacifico', cursive;
+$fuente-nav: 'Inconsolata', monospace;
+$color-parrafo: black;
+$altura-body: 150vh;
+$altura-cabecera: 51vh;
+$altura-cuerpo: 94vh;
+$altura-pie: 5vh;
+
+/*LAYOUT*/
+$titulo-flex: inline-flex;
+$titulo-centrado: center;
+
+/*VARIABLES PARA PRODUCTOS*/
+$altura-img-productos: 15em;
+$ancho-img-productos: 20em;
+$espacio-arriba: 13px;
+$espacio-izq: 0.85em;
+$relleno-total: 0;
+$borde: 7px double #9b703e;
+$borde-radio: 20px;
+$vista: tablet;
+$vista-dos: mobile;

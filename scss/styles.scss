@@ -1,0 +1,17 @@
+@import "./utilities/_variables";
+@import "./globals/resets";
+
+/*ESTILO PARA LA PAGINA INICIO*/
+@import "./views/home";
+
+/*ESTILO PARA LA PAGINA PRODUCTOS*/
+@import "./views/productos";
+
+/*ESTILO PARA CURSOS*/
+@import "./views/cursos";
+
+/*ESTILO PARA IMAGENES*/
+@import "./views/imagenes";
+
+/*ESTILO PARA CONTACTOS*/
+@import "./views/contacto";

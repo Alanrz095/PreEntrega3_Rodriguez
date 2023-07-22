@@ -1,0 +1,265 @@
+/* APLICANDO DISEÑO EN COMUN A TODOS LOS DOCUMENTOS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #EFCB91;
+    padding: 0 !important;
+}
+
+header{
+    height: 55vh;
+    background-image: url(../assets/images/icono.jpg);
+    background-position: 9% 29em;
+    margin-bottom: 20px;
+}
+
+main{
+    height: 62vh;
+}
+
+footer{
+    height: 6vh;
+}
+
+nav{
+    font-family: 'Inconsolata', monospace;
+}
+
+li{
+    list-style-type: none !important;
+}
+
+a{
+    color: rgba(13, 13, 12, 0.711) !important;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+}
+
+#parrafoDelInicio{
+    margin-left: 35px !important;
+}
+
+video{
+    height: 150px;
+    width: 200px;
+}
+
+.container-fluid #pieDelInicio{
+    margin-top: 15px !important;
+}
+
+.container-fluid #pieDelInicio p a{
+    text-decoration: none;
+}
+/*
+nav{
+    font-family: 'Inconsolata', monospace;
+}
+
+.cabecera_principal,
+.cabecera_dos,
+.cabecera_tres,
+.cabecera_cuatro,
+.cabecera_cinco{
+    background-image: url("../assets/images/icono.jpg");
+    background-repeat: repeat;
+    background-position: 9px 24%;
+    height: 60vh;
+}
+
+.cabecera_principal .titulo_principal,
+.cabecera_dos .titulo_dos,
+.cabecera_tres .titulo_tres,
+.cabecera_cuatro .cuarto_titulo,
+.cabecera_cinco .quinto_titulo{
+    font-family: 'Pacifico', cursive;
+}
+
+.titulo_dos,
+.titulo_tres,
+.cuarto_titulo,
+.quinto_titulo {
+    display: inline-block;
+    position: relative;
+    top: 25vh;
+    left: 92vh;
+}
+
+ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: rgba(13, 13, 12, 0.711);
+}
+
+p,
+.cuerpo_cinco #formulario .mismo_estilo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #292b29db;
+} */
+
+/* APLICANDO DISEÑO AL DOCUMENTO INICIO */
+
+/* .cabecera_principal nav {
+    display: inline-block;
+    margin-left: 418px;
+    position: relative;
+    bottom: 19px;
+}
+
+.titulo_principal {
+    display: inline-block;
+    position: relative;
+    top: 25vh;
+    left: 60vh;
+}
+
+main #seccion_dos video{
+    width: 636px;
+}
+
+main #seccion_uno{
+    position: relative;
+    width: 57%;
+    margin-top: 70px;
+    margin-left: 15px;
+    top: 50px;
+} */
+
+
+/* APLICANDO ESTILO AL DOCUMENTO PRODUCTOS  */
+
+/* .cabecera_dos nav,
+.cabecera_cinco nav{
+    display: inline-block;
+    margin-left: 70%;
+    position: relative;
+    bottom: 50px
+}
+
+#cuerpo_secundario{
+    height: 500px;
+}
+
+#cuerpo_secundario #seccion_secundario div,
+#cuerpo_tres #seccion_tres div{
+    height: 244px;
+    width: 439px;
+    margin-top: 36px;
+    margin-left: 180px;
+}
+
+#cuerpo_secundario #seccion_secundario div img,
+#cuerpo_tres #seccion_tres div img{
+    height: 239px;
+    width: 434px
+}
+
+#cuerpo_secundario #seccion_secundario_bis,
+#cuerpo_secundario #seccion_secundario_bis p {
+    width: 50%;
+    height: 46%;
+    position: relative;
+    left: 51vh;
+    bottom: 71vh;
+    margin-bottom: 175px
+}
+
+#pie_productos{
+    position: relative;
+    top: 86vh
+} */
+
+/*APLICANDO ESTILO AL DOCUMENTO CURSOS*/
+
+/* .cabecera_tres nav,
+   .cabecera_cuatro nav{
+    display: inline-block;
+    margin-left: 70%;
+    position: relative;
+    bottom: 50px
+}
+
+#cuerpo_tres,
+#seccion_tres{
+    height: 120vh;
+}
+
+#cuerpo_tres #seccion_tres h2{
+    display: inline;
+    width: 39%;
+    height: 5%;
+    position: relative;
+    left: 100vh;
+    bottom: 112vh;
+}
+
+h2{
+    font-family: 'Caveat', cursive;;
+}
+
+#cuerpo_tres #seccion_tres p{
+    width: 39%;
+    height: 13%;
+    position: relative;
+    left: 100vh;
+    bottom: 110vh;
+    margin-bottom: 144px
+}
+
+#cuerpo_tres #seccion_tres p button{
+    margin-top: 15px;
+} */
+
+/*APLICANDO ESTILO AL DOCUMENTO IMAGENES*/
+
+/* #cuerpo_cuatro section{
+    width: 100%;
+    height: 84vh;
+}
+
+#cuerpo_cuatro section img{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    left: 42vh;
+    top: 40px;
+    margin-left: 50px;
+    margin-bottom: 31px;
+}
+
+#cuerpo_cuatro section .img_cuatro{
+    position: relative;
+    top: 45.1vh;
+    left: -43.1vh;
+}
+
+#cuerpo_cuatro section .img_cinco{
+    position: relative;
+    top: 45.1vh;
+    left: -43.2vh;
+} */
+
+/* DANDO ESTILO AL DOCUMENTO CONTACTO */
+
+/* #formulario{
+    margin-top: 25px;
+}
+
+.cuerpo_cinco #formulario div,
+.cuerpo_cinco #formulario #boton{
+    position: relative;
+    left: 40%;
+    margin-top: 16px;
+} */

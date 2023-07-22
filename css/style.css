@@ -1,144 +1,216 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+/*ESTILO GENERAL*/
+/*LAYOUT*/
+/*VARIABLES PARA PRODUCTOS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*DISEÑO PARA LA PÁGINA INICIO (APERTURA)*/
-
-body{
-    height: 150vh;
-    background-color: #ebaa4161;
+body {
+  height: 150vh;
+  background-color: rgba(235, 170, 65, 0.3803921569);
 }
 
-header{
-    height: 51vh;
-    background-image: url(../assets/images/icono.jpg);
-    background-size: contain;
-    background-position-y: 11em;
+header {
+  height: 51vh;
+  background-image: url(../assets/images/icono.jpg);
+  background-size: contain;
+  background-position-y: 10em;
+  display: flex;
+  align-items: center;
 }
 
-main{
-    height: 94vh;
+header nav {
+  background-color: rgba(201, 168, 137, 0.8901960784);
 }
 
-nav{
-    font-family: 'Inconsolata', monospace;
+main {
+  height: 94vh;
 }
 
-h1{
-    font-family: 'Pacifico', cursive;
-    
+footer {
+  height: 5vh;
 }
 
-#tituloDelInicio{
+footer p {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: brown;
+  font-family: "Pacifico", cursive;
+  display: inline-flex;
+  justify-content: center;
+}
+
+p {
+  color: black;
+}
+
+@media (max-width: 320px) {
+  header {
+    background-position: 47em 6em;
+  }
+}
+/*ESTILO PARA LA PAGINA INICIO*/
+main #seccion-video {
+  display: flex;
+  align-items: center;
+}
+
+video {
+  width: 100%;
+}
+
+/*ESTILO PARA LA PAGINA PRODUCTOS*/
+#mainDeProductos div img {
+  width: 20em;
+  height: 15em;
+  margin-top: 13px;
+  margin-left: 0.85em;
+  padding: 0;
+  border: 7px double #9b703e;
+  border-radius: 20px;
+}
+
+#footerDeProductos {
+  position: relative;
+  top: 27em;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  #headerDeProductos #tituloDeProductos {
     position: relative;
-    left: 1.5em;
-    top: 4em;
-    height: 1.5em;
+    padding: 0;
+    left: 2em;
+  }
+  #footerDeProductos {
+    position: relative;
+    top: 60em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #footerDeProductos {
+    top: 11em;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  #headerDeProductos {
+    background-position: 10em;
+  }
+  #headerDeProductos nav div div ul {
+    margin-top: 5px;
+  }
+  #mainDeProductos div img {
+    width: 18.5em;
+    height: 11em;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  #mainDeProductos div p {
+    padding-left: 22px;
+    margin-top: 1em;
+  }
+  #footerDeProductos p {
+    margin-top: 23px;
+  }
+}
+/*ESTILO PARA CURSOS*/
+#bodyDeCursos {
+  height: 200vh;
 }
 
-.nav-link{
-    color: black;
+.tituloDosCursos {
+  font-family: "Caveat", cursive;
+  color: brown;
 }
 
-p{
-    color: black;
+#mainDeCursos {
+  height: 140vh;
+}
+#mainDeCursos div img {
+  width: 20em;
+  height: 15em;
+  margin-top: 13px;
+  margin-left: 0.85em;
+  padding: 0;
+  border: 7px double #9b703e;
+  border-radius: 20px;
 }
 
-video{
-    width: 46em;
-    margin-top: 8em;
+#alfareria, #diseño, #moldes {
+  display: grid !important;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  height: 15em;
 }
 
-footer p a{
-    text-decoration: none;
-    color: rgba(13, 13, 12, 0.711);
+#pieDeCursos {
+  height: 9vh;
 }
 
-
-/*DISEÑO PARA LA PÁGINA INICIO (CIERRE)*/
-
-/*DISEÑO PARA LA PÁGINA DOCUMENTO (APERTURA)*/
-
-#bodyDeProductos{
-    height: 250vh;
+@media (min-width: 320px) and (max-width: 768px) {
+  .parrafo_cursos {
+    font-size: 14px;
+    margin-left: 0;
+  }
+  #pieDeCursos {
+    position: relative;
+    top: 38em;
+  }
+}
+/*ESTILO PARA IMAGENES*/
+#cuerpoDeImagenes {
+  width: 100.8%;
 }
 
-#mainDeProductos{
-    height: 194vh;
+#cuerpoDeImagenes img {
+  width: 25em;
+  height: 16em;
+  margin-top: 13px;
+  margin-left: 2em;
+  padding: 0;
+  border: 7px double #9b703e;
+  border-radius: 20px;
 }
 
-#tituloDeProductos{
-    width: 9em;
-    height: 2em;
-    margin-top: 2em;
+@media (max-width: 1024px) {
+  #cuerpoDeImagenes img {
+    width: 17em;
+    height: 13em;
+  }
+}
+@media (min-width: 768px) and (max-width: 904px) {
+  #pieDeImagenes {
+    position: relative;
+    top: 6em;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1285px) {
+  #pieDeImagenes {
+    position: relative;
+    top: 16em;
+  }
+}
+@media (min-width: 603px) and (max-width: 767px) {
+  #pieDeImagenes {
+    position: relative;
+    top: 6em;
+  }
+}
+@media (min-width: 320px) and (max-width: 602px) {
+  #pieDeImagenes {
+    position: relative;
+    top: 48em;
+  }
+}
+/*ESTILO PARA CONTACTOS*/
+#contenedor {
+  width: 46em;
+  padding-top: 5em;
 }
 
-#mainDeProductos div img{
-   width: 28em;
-   height: 19em;
-   background-color: aliceblue;
-   margin-top: 13px;
-   margin-left: 9em;
-   padding: 0; 
-   border: 7px double #9b703e;
-   border-radius: 20px;
-}
-
-#footerDeProductos p{
-    margin-bottom: 0;
-    margin-top: 7px;
-}
-
-@media (max-width: 320px){
-    header{
-        background-position: 10em;
-    }
-
-    nav div div ul{
-        background-color: #eeb25296;
-        margin-top: 5px;
-    }
-    
-    #tituloDelInicio{
-        position: absolute;
-        left: 2.7em;
-    }
-
-    video{
-        width: 18.5em;
-        margin-top: 4em;
-    }
-
-    footer p{
-        text-align: center;
-    }
-
-    #tituloDeProductos{
-        position: relative;
-        bottom: 1em;
-        padding: 0;
-    }
-
-    #mainDeProductos div img{
-        width: 18.5em;
-        height: 11em;
-        margin-left: 0;
-        margin-top: 8px;
-    }
-
-    #mainDeProductos div p{
-        padding-left: 22px;
-        margin-top: 1em;
-    }
-
-    #footerDeProductos{
-        position: relative;
-        top: 21em;
-    }
-
-    #footerDeProductos p{
-        margin-top: 14px;
-    } 
-}
+/*# sourceMappingURL=style.css.map */

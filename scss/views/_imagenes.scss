@@ -1,0 +1,52 @@
+#cuerpoDeImagenes{
+    width: 100.8%;
+}
+
+#cuerpoDeImagenes{
+    img{
+        width: 25em;
+        height: 16em;
+        margin-top: $espacio-arriba;
+        margin-left: 2em;
+        padding: 0;
+        border: $borde;
+        border-radius: $borde-radio;
+    }
+}
+
+@media (max-width: 1024px){
+    #cuerpoDeImagenes {
+        img{
+            width: 17em;
+            height: 13em;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 904px){
+    #pieDeImagenes{
+        position: relative;
+        top: 6em;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1285px){
+    #pieDeImagenes{
+        position: relative;
+        top: 16em;
+    }
+}
+
+@media (min-width: 603px) and (max-width: 767px){
+    #pieDeImagenes{
+        position: relative;
+        top: 6em;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 602px){
+    #pieDeImagenes{
+        position: relative;
+        top: 48em;
+    }
+}

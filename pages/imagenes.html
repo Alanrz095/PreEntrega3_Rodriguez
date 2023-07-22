@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imágenes</title>
-    <link rel="shortcut icon" href="assets/images/icono.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/fbe271e26f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../assets/images/icono.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Pacifico&display=swap" rel="stylesheet">
@@ -15,32 +16,50 @@
           crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="bodyCuatro">
-    <header class="cabecera_cuatro">
+<body class="bodyCuatro" id="bodyDeImagenes">
+    <header class="justify-content-center">
         <h1 class="cuarto_titulo">Galería de imágenes</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="productos.html">PRODUCTOS</a></li>
-                <li><a href="cursos.html">CURSOS</a></li>
-                <li><a href="imagenes.html">IMÁGENES</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+        <nav class="col-4 navbar navbar-expand-sm align-items-start position-absolute top-0 end-0 w-100">
+            <div class="container-fluid justify-content-end">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="../inicio.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="cursos.html">Cursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="imagenes.html">Imágenes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main id="cuerpo_cuatro">
-        <section>
-            <img class="img_uno" src="../assets/images/bowls_chicos.jpg" alt="">
-            <img class="img_dos" src="../assets/images/mate_cactus.jpg" alt="">
-            <img class="img_tres" src="../assets/images/ovalados.jpg" alt="">
-            <img class="img_cuatro" src="../assets/images/sahumerios_dos.jpg" alt="">
-            <img class="img_cinco" src="../assets/images/tazas_chocolateras.jpg" alt="">
-            <img class="img_seis" src="../assets/images/tazas_negras.jpg" alt="">
-        </section>
+    <main class="row justify-content-center" id="cuerpoDeImagenes">
+        <img class="col-md-12 col-lg-6 col-xl-6" src="../assets/images/mate_cactus.jpg" alt="Mate con forma de cactus">
+        <img class="col-md-12 col-lg-6 col-xl-6" src="../assets/images/tazas_chocolateras.jpg" alt="Dos tazas rosas choclateras">
+        <img class="col-md-12 col-lg-6 col-xl-6" src="../assets/images/tazas.jpg" alt="Dos tazas de con dibujo de cactus">
+        <img class="col-md-12 col-lg-6 col-xl-6" src="../assets/images/ovalados.jpg" alt="Cuatro bowls ovalados">
+        <img class="col-md-12 col-lg-6 col-xl-6" src="../assets/images/sahumerios_dos.jpg" alt="Cuatro sahumerios de distintos colores">
+        <img class="col-md-12 col-lg-6 col-xl-6" src="../assets/images/tazas_negras.jpg" alt="TAzas negras sobre una bandeja">
+        
     </main>
-    <footer>
-        <p>Copy Alan Rodriguez</p>
-    </footer>
+    <footer class="row w-100" id="pieDeImagenes">
+        <p class="col-md-12 col-lg-4 col-xl-4">Copyright Alan Rodriguez</p>
+        <p class="col-md-12 col-lg-4 col-xl-4"><a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></p>
+        <p class="col-md-12 col-lg-4 col-xl-4"><a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a></p>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous">

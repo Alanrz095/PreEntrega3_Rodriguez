@@ -1,0 +1,46 @@
+#bodyDeCursos{
+    height: 200vh;
+}
+
+.tituloDosCursos{
+    font-family: 'Caveat', cursive;
+    color: brown;
+}
+
+#mainDeCursos{
+    height: 140vh;
+    div{
+        img{
+            width: $ancho-img-productos;
+            height: $altura-img-productos;
+            margin-top: $espacio-arriba;
+            margin-left: $espacio-izq;
+            padding: 0;
+            border: $borde;
+            border-radius: $borde-radio;
+        }
+    }
+}
+
+#alfareria, #diseño, #moldes{
+    display: grid !important;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    height: 15em;
+}
+
+#pieDeCursos{
+    height: 9vh;
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+    .parrafo_cursos{
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    #pieDeCursos{
+        position: relative;
+        top: 38em;
+    }
+}
